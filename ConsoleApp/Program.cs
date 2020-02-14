@@ -11,9 +11,50 @@ namespace ConsoleApp
         {
             //Run_FINDNUMBER();
             //Run_tracesAreSimilar();
-            Run_HourglassSum();
+            //Run_HourglassSum();
+            Run_countingValleys();
         }
 
+        private static void Run_countingValleys()
+        {
+            var reader = new StreamReader("countingValleys/input/input01.txt");
+            Console.SetIn(reader);
+            var numberOfSteps = Int32.Parse(Console.ReadLine());
+            var sequence = Console.ReadLine();
+            var numberOfValleys = countingValleys(numberOfSteps, sequence);
+        }
+
+        static int countingValleys(int numberOfSteps, string sequence)
+        {
+            int currentHeight = 0;
+            bool inValley = false;
+            int valleyCount = 0;
+
+            foreach(char c in sequence)
+            {
+                if ( c == 'U')
+                {
+                    currentHeight++;
+                }
+                else
+                {
+                    currentHeight--;
+                }
+
+                if (currentHeight < 0 && inValley == false)
+                {
+                    inValley = true;
+                }
+
+                if (inValley == true && currentHeight >= 0)
+                {
+                    inValley = false;
+                    valleyCount++;
+                }
+            }
+
+            return valleyCount;
+        }
         private static void Run_HourglassSum()
         {
             //https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
