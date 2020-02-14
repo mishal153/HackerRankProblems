@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <Folder Include="hourglassSum\" />
-    <Content Include="hourglassSum\**\*.txt">
+    <Folder Include="countingValleys\" />
+    <Content Include="**\*.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
