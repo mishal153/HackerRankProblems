@@ -6,15 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="in.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="hourglassSum\" />
-    <Folder Include="countingValleys\" />
-    <Content Include="**\*.txt">
+    <Content Include="Easy\**\*.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
