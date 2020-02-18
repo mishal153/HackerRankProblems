@@ -5,6 +5,7 @@ using System;
 using HackerRank.Easy.hourglassSum;
 using HackerRank.Easy.countingValleys;
 using HackerRank.Easy.SockMerchant;
+using HackerRank.Easy.JumpingOnTheClouds;
 
 namespace ConsoleApp
 {
@@ -14,7 +15,8 @@ namespace ConsoleApp
         {
             //HourglassSumRunner.Run();
             //CountingValleysRunner.Run();
-            SockMerchantRunner.Run();
+            //SockMerchantRunner.Run();
+            JumpingOnTheClouds.Run();
         }
     }
 }
