@@ -7,6 +7,7 @@ using HackerRank.Easy.countingValleys;
 using HackerRank.Easy.SockMerchant;
 using HackerRank.Easy.JumpingOnTheClouds;
 using HackerRank.Easy.RepeatedString;
+using HackerRank.Easy.LeftRotation;
 
 namespace ConsoleApp
 {
@@ -18,8 +19,8 @@ namespace ConsoleApp
             //CountingValleysRunner.Run();
             //SockMerchantRunner.Run();
             //JumpingOnTheClouds.Run();
-
-            RepeatedStringRunner.Run();
+            //RepeatedStringRunner.Run();
+            LeftRotationRunner.Run();
         }
     }
 }
